@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MOONRECEIPT — Keep the Receipt.</title>
+<meta name="description" content="Every trade leaves a receipt. MoonReceipt ($MRCQ) is a meme-first community built around one universal retail-trader truth.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="MOONRECEIPT — KEEP THE RECEIPT.">
+<meta property="og:description" content="Every trade leaves a receipt. 🧾">
+<meta property="og:type" content="website">
+<meta property="og:image" content="og-image.png">
+<meta property="og:url" content="https://moonreceipt.xyz">
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="MOONRECEIPT — KEEP THE RECEIPT.">
+<meta name="twitter:description" content="Every trade leaves a receipt. 🧾">
+<meta name="twitter:image" content="og-image.png">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧾</text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <span class="mark">🧾 MOONRECEIPT</span>
+    <span class="ticker-pill">$MRCQ</span>
+  </div>
+</header>
+
+<main>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="top">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow-mark">🧾</p>
+        <h1 class="hero-title">
+          EVERY TRADE<br>
+          LEAVES A<br>
+          RECEIPT.
+        </h1>
+        <p class="hero-sub">
+          You bought the dip. You chased the candle. You said "just one more."<br>
+          We kept the evidence.
+        </p>
+        <div class="hero-cta">
+          <a href="#the-receipt" class="btn btn-primary">Keep the Receipt <span aria-hidden="true">→</span></a>
+          <a href="#what-is-this" class="btn btn-ghost">What is this?</a>
+        </div>
+      </div>
+
+      <div class="hero-printer" aria-hidden="true">
+        <div class="printer-body">
+          <div class="printer-slot"></div>
+          <div class="printer-led"></div>
+        </div>
+        <div class="printer-paper" id="printer-paper">
+          <div class="receipt-strip">
+            <p class="r-brand">MOONRECEIPT&trade;</p>
+            <p class="r-line">YOUR TRADE. YOUR STORY.</p>
+            <div class="r-rule"></div>
+            <p class="r-row"><span>ITEM</span><span>$MRCQ</span></p>
+            <p class="r-row"><span>CONVICTION</span><span>100%</span></p>
+            <p class="r-row"><span>FOMO</span><span>DETECTED</span></p>
+            <p class="r-row"><span>EXIT PLAN</span><span>NOT FOUND</span></p>
+            <p class="r-row"><span>REGRET</span><span class="blink">CALCULATING&hellip;</span></p>
+            <div class="r-rule dashed"></div>
+            <p class="r-footer">KEEP THE RECEIPT.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="scroll-cue" id="scroll-cue" aria-label="Scroll down">
+      <span></span>
+    </button>
+  </section>
+
+  <!-- ================= SECTION: THE RECEIPT ================= -->
+  <section class="section receipt-section" id="the-receipt">
+    <div class="section-inner">
+      <h2 class="section-title">THE MARKET<br>KEEPS SCORE.</h2>
+      <p class="section-lead">
+        Every trade leaves something behind. A screenshot. A transaction.
+        A story. A mistake. Usually all four.
+      </p>
+
+      <div class="interactive-receipt">
+        <div class="ir-header">
+          <span>MOONRECEIPT</span>
+          <span id="tx-number">TRANSACTION #000001</span>
+        </div>
+        <div class="ir-body">
+          <p class="ir-row"><span>ITEM</span><span>$MRCQ</span></p>
+          <div class="ir-row ir-bar-row">
+            <span>FOMO</span>
+            <span class="ir-bar"><span class="ir-bar-fill"></span></span>
+            <span class="ir-pct">100%</span>
+          </div>
+          <p class="ir-row"><span>EXIT PLAN</span><span>NOT FOUND</span></p>
+          <p class="ir-row"><span>REGRET</span><span class="blink">CALCULATING&hellip;</span></p>
+          <p class="ir-row"><span>STATUS</span><span id="ir-status">STILL HERE</span></p>
+        </div>
+        <div class="ir-rule"></div>
+        <p class="ir-thanks">THANK YOU FOR HOLDING.</p>
+        <p class="ir-keep">KEEP THIS RECEIPT.</p>
+        <button class="btn btn-primary print-btn" id="print-btn">PRINT MY RECEIPT</button>
+        <p class="print-status" id="print-status" aria-live="polite"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION: WHAT IS MOONRECEIPT ================= -->
+  <section class="section" id="what-is-this">
+    <div class="section-inner">
+      <h2 class="section-title">WHAT IS<br>MOONRECEIPT?</h2>
+      <p class="section-lead">
+        MoonReceipt is a meme-first community built around one universal
+        retail-trader truth: every trade has a story.
+      </p>
+
+      <div class="triplet">
+        <div class="triplet-item">
+          <p class="triplet-q">Green candle?</p>
+          <p class="triplet-a">Receipt.</p>
+        </div>
+        <div class="triplet-item">
+          <p class="triplet-q">FOMO entry?</p>
+          <p class="triplet-a">Receipt.</p>
+        </div>
+        <div class="triplet-item">
+          <p class="triplet-q">"Never selling"?</p>
+          <p class="triplet-a">Definitely a receipt.</p>
+        </div>
+      </div>
+
+      <p class="section-footnote">
+        MoonReceipt exists to build a character, a meme language, and a
+        community identity that can live on X and across internet culture.
+        We don't claim the token will go up. We just print what happened.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= SECTION: THE LORE ================= -->
+  <section class="section lore-section" id="lore">
+    <div class="section-inner lore-inner">
+      <div class="lore-char" aria-hidden="true">
+        <svg viewBox="0 0 240 300" class="receipt-character">
+          <path class="rc-body" d="M40 20 L200 20 L200 250 L190 260 L180 250 L170 260 L160 250 L150 260 L140 250 L130 260 L120 250 L110 260 L100 250 L90 260 L80 250 L70 260 L60 250 L50 260 L40 250 Z"/>
+          <line class="rc-line" x1="60" y1="55" x2="180" y2="55"/>
+          <line class="rc-line" x1="60" y1="70" x2="180" y2="70"/>
+          <line class="rc-line" x1="60" y1="85" x2="140" y2="85"/>
+          <circle class="rc-eye" cx="90" cy="140" r="6"/>
+          <circle class="rc-eye" cx="150" cy="140" r="6"/>
+          <path class="rc-mouth" d="M100 175 Q120 190 140 175"/>
+          <line class="rc-line" x1="60" y1="210" x2="180" y2="210"/>
+          <line class="rc-line" x1="60" y1="225" x2="150" y2="225"/>
+        </svg>
+      </div>
+      <div class="lore-copy">
+        <h2 class="section-title">MEET THE<br>RECEIPT.</h2>
+        <p class="lore-line">It has seen every green candle.</p>
+        <p class="lore-line">Every red candle.</p>
+        <p class="lore-line">Every "this is the bottom."</p>
+        <p class="lore-line">Every screenshot that mysteriously disappeared the next morning.</p>
+        <p class="lore-line lore-final">It doesn't judge. It just prints.</p>
+        <blockquote class="lore-quote">"KEEP THE RECEIPT."</blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION: WHY IT EXISTS ================= -->
+  <section class="section" id="why">
+    <div class="section-inner">
+      <div class="why-grid">
+        <div class="why-item">
+          <p class="why-num">01</p>
+          <h3 class="why-title">Retail Culture</h3>
+          <p class="why-desc">Built for people who watch charts at 2AM and still call it research.</p>
+        </div>
+        <div class="why-item">
+          <p class="why-num">02</p>
+          <h3 class="why-title">Meme Native</h3>
+          <p class="why-desc">Made for screenshots, replies, short videos and inside jokes.</p>
+        </div>
+        <div class="why-item">
+          <p class="why-num">03</p>
+          <h3 class="why-title">Community First</h3>
+          <p class="why-desc">The community decides what gets built next.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION: THE CULTURE ================= -->
+  <section class="section culture-section" id="culture">
+    <div class="section-inner">
+      <h2 class="section-title">RECEIPTS FROM<br>THE WILD.</h2>
+      <p class="section-lead">Placeholder posts. The real ones start after launch.</p>
+
+      <div class="culture-scroll">
+        <div class="culture-card">
+          <p class="cc-text">"bought the dip"</p>
+          <p class="cc-stamp">RECEIPT PRINTED.</p>
+        </div>
+        <div class="culture-card">
+          <p class="cc-text">"said I was done trading"</p>
+          <p class="cc-stamp">RECEIPT PRINTED.</p>
+        </div>
+        <div class="culture-card">
+          <p class="cc-text">"opened the chart one last time"</p>
+          <p class="cc-stamp">RECEIPT PRINTED.</p>
+        </div>
+        <div class="culture-card">
+          <p class="cc-text">"this is definitely the bottom"</p>
+          <p class="cc-stamp">RECEIPT PRINTED.</p>
+        </div>
+        <div class="culture-card">
+          <p class="cc-text">"just checking one more time"</p>
+          <p class="cc-stamp">RECEIPT PRINTED.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION: ROADMAP ================= -->
+  <section class="section roadmap-section" id="roadmap">
+    <div class="section-inner">
+      <h2 class="section-title">NO PROMISES.<br>JUST RECEIPTS.</h2>
+
+      <div class="roadmap-list">
+        <div class="roadmap-item">
+          <p class="rm-phase">PHASE 01</p>
+          <h3 class="rm-title">Print</h3>
+          <p class="rm-desc">Launch the identity. Open the receipt printer. Start the memes.</p>
+        </div>
+        <div class="roadmap-item">
+          <p class="rm-phase">PHASE 02</p>
+          <h3 class="rm-title">Stack</h3>
+          <p class="rm-desc">Community. Original art. Short-form videos. Collectible receipts.</p>
+        </div>
+        <div class="roadmap-item">
+          <p class="rm-phase">PHASE 03</p>
+          <h3 class="rm-title">Ship</h3>
+          <p class="rm-desc">Merch. Physical collectibles. Community experiments.</p>
+        </div>
+        <div class="roadmap-item">
+          <p class="rm-phase">PHASE 04</p>
+          <h3 class="rm-title">Moon</h3>
+          <p class="rm-desc">Let the community decide what gets built next.</p>
+        </div>
+      </div>
+      <p class="disclaimer-line">Milestones are goals, not guarantees.</p>
+    </div>
+  </section>
+
+  <!-- ================= SECTION: TOKEN ================= -->
+  <section class="section token-section" id="token">
+    <div class="section-inner">
+      <h2 class="section-title">THE RECEIPT<br>HAS A TICKER.</h2>
+      <div class="token-card">
+        <p class="token-name">MOONRECEIPT</p>
+        <p class="token-ticker">$MRCQ</p>
+        <p class="token-status">STATUS: COMMUNITY MEME PROJECT</p>
+        <div class="token-rule"></div>
+        <div class="token-details">
+          <p class="token-row"><span>CONTRACT</span><span>COMING SOON</span></p>
+          <p class="token-row"><span>NETWORK</span><span>COMING SOON</span></p>
+          <p class="token-row"><span>LIQUIDITY</span><span>COMING SOON</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION: ROBINHOOD NARRATIVE ================= -->
+  <section class="section" id="context">
+    <div class="section-inner">
+      <h2 class="section-title">BUILT FOR THE<br>RETAIL INTERNET.</h2>
+      <p class="section-lead">
+        MoonReceipt lives at the intersection of retail trading, crypto
+        culture, internet memes, and on-chain communities.
+      </p>
+      <p class="rh-disclaimer">
+        MoonReceipt is an independent project and is not affiliated with,
+        sponsored by, or endorsed by Robinhood.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= SECTION: FAQ ================= -->
+  <section class="section faq-section" id="faq">
+    <div class="section-inner">
+      <h2 class="section-title">FAQ</h2>
+
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>What is $MRCQ?</summary>
+          <p>$MRCQ is the ticker for MoonReceipt, a meme-first community token built around retail-trader culture. It is not an investment product, and holding it does not promise any return.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Is MoonReceipt a Robinhood project?</summary>
+          <p>No. MoonReceipt is an independent project and is not affiliated with, sponsored by, or endorsed by Robinhood.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Is this financial advice?</summary>
+          <p>No. Nothing on this site is financial advice. $MRCQ is a meme/community token — do your own research before doing anything with any crypto asset.</p>
+        </details>
+        <details class="faq-item">
+          <summary>When is the token launch?</summary>
+          <p>Details will be announced through the official MoonReceipt channels.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Where can I follow the project?</summary>
+          <p>Follow MoonReceipt on X for updates, memes, and announcements.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FINAL SECTION ================= -->
+  <section class="section final-section" id="follow">
+    <div class="final-inner">
+      <h2 class="final-title">KEEP<br>THE<br>RECEIPT.</h2>
+      <p class="final-sub">Your trade.<br>Your story.</p>
+      <a href="https://x.com/MOONRECEIPT" class="btn btn-dark" target="_blank" rel="noopener">Follow on X <span aria-hidden="true">→</span></a>
+      <p class="final-ticker">$MRCQ</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p>MOONRECEIPT © 2026</p>
+    <p>MEME / COMMUNITY PROJECT</p>
+    <p>NOT FINANCIAL ADVICE</p>
+    <p>MoonReceipt is an independent project and is not affiliated with Robinhood.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
